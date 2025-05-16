@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>دردشة المدارس</title>
+  <link rel="stylesheet" href="chat.css" />
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js"></script>
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <img src="https://i.pravatar.cc/100" alt="المستخدم" class="user-img" />
+      <h2>الدردشة العامة</h2>
+    </header>
+
+    <div id="chatBox" class="chat-box"></div>
+
+    <form id="chatForm" class="chat-form">
+      <input type="text" id="username" placeholder="اسم المستخدم" required />
+      <input type="text" id="chatInput" placeholder="اكتب رسالتك..." required />
+      <button type="submit">إرسال</button>
+    </form>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>
